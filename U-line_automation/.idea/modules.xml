@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/U-Line-Project/U-line/U-line.iml" filepath="$PROJECT_DIR$/U-Line-Project/U-line/U-line.iml" />
+      <module fileurl="file://$PROJECT_DIR$/U-line-automation.iml" filepath="$PROJECT_DIR$/U-line-automation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UpbootProject.iml" filepath="$PROJECT_DIR$/UpbootProject.iml" />
+    </modules>
+  </component>
+</project>

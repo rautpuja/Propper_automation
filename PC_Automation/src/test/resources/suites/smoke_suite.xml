@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smoke" verbose="8">
+	<listeners>
+		<listener class-name="com.PC_Automation_testcases.reporter.ExtentReporter" />
+		<listener class-name="com.PC_Automation_testcases.reporter.reporter.RetryListenerClass" />
+	</listeners>
+
+	<test name="LoginTestChrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" /> <!--  any server/machine URL where grid is connected or cloud url e.g SauceLabs,BrowserStack etc -->
+		<classes>
+			<class name="com.PC_Automation_testcases.tests.web.LoginTest"></class>
+			<class name="com.PC_Automation_testcases.tests.web.Guestuser"></class>
+			<class name="com.PC_Automation_testcases.tests.web.TestCases.HomePage_Test"></class>
+			<class name="com.PC_Automation_testcases.tests.web.TestCases.PLP_test"></class>
+			<class name="com.PC_Automation_testcases.tests.web.TestCases.PDP_Test"></class>
+			<class name="com.PC_Automation_testcases.tests.web.TestCases.Search_result_test"></class>
+			<class name="com.PC_Automation_testcases.tests.web.TestCases.Checkout_test"></class>
+			<class name="com.PC_Automation_testcases.tests.web.TestCases.Shopping_cart_test"></class>
+			<class name="com.PC_Automation_testcases.tests.web.TestCases.Category_l1_test"></class>
+			<class name="com.PC_Automation_testcases.tests.web.TestCases.Category_L2_test"></class>
+			<class name="com.PC_Automation_testcases.tests.web.TestCases.My_account_Test"></class>
+			<!--
+            <methods>-->
+			<!--					<include name="validate_b2b_login" />-->
+			<!--					<exclude name="validate_dealer_login" />-->
+			<!--				</methods>-->
+			<!--			</class>-->
+		</classes>
+	</test>
+
+	<!--	<test name="LoginTestFirefox">-->
+	<!--		<parameter name="browser" value="firefox" />-->
+	<!--		<parameter name="nodeURL" value="" />-->
+	<!--		<classes>-->
+	<!--			<class name="com.PC_Automation_testcases.tests.web.LoginTest">-->
+	<!--				<methods>-->
+	<!--					<exclude name="validate_b2b_login" />-->
+	<!--					<include name="validate_dealer_login" />-->
+	<!--				</methods>-->
+	<!--			</class>-->
+	<!--		</classes>-->
+	<!--	</test>-->
+	<!--	-->
+	<!--	<test name="LoginTestResponsive">-->
+	<!--		<parameter name="browser" value="chrome_emulator" />-->
+	<!--		<parameter name="nodeURL" value="" />-->
+	<!--		<classes>-->
+	<!--			<class name="com.PC_Automation_testcases.tests.mobile.MLoginTest">-->
+	<!--				<methods>-->
+	<!--					<include name="validate_b2b_login" />-->
+	<!--					<exclude name="validate_dealer_login" />-->
+	<!--				</methods>-->
+	<!--			</class>-->
+	<!--		</classes>-->
+	<!--	</test>-->
+</suite>

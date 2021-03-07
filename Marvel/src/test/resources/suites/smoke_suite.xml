@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smoke" verbose="8">
+	<listeners>
+		<listener class-name="com.Marvel.reporter.ExtentReporter" />
+
+			<listener class-name="com.Marvel.reporter.reporter.RetryListenerClass" />
+
+
+
+	</listeners>
+
+	<test name="LoginTestChrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" /> <!--  any server/machine URL where grid is connected or cloud url e.g SauceLabs,BrowserStack etc -->
+		<classes>
+<!--			<class name="com.Marvel.tests.web.LoginTest"></class>-->
+<!--			<class name="com.Marvel.tests.web.Guestuser"></class>-->
+			<class name="com.Marvel.tests.web.Servicer.Checkout_Test"></class>
+			<class name="com.Marvel.tests.web.Servicer.Shipping_testCase"></class>
+			<class name="com.Marvel.tests.web.Servicer.Address_book_test"></class>
+<!--			<class name="com.Marvel.tests.web.Servicer.Contact_us_test"></class>-->
+			<class name="com.Marvel.tests.web.Servicer.My_account_Test"></class>
+
+<!--			<class name="com.Marvel.tests.web.Servicer.My_Order_Test"></class>-->
+			<class name="com.Marvel.tests.web.Servicer.My_saved_item_test"></class>
+			<class name="com.Marvel.tests.web.Servicer.PartSearch_Test"></class>
+			<class name="com.Marvel.tests.web.Servicer.Product_Registration"></class>
+<!--			<class name="com.Marvel.tests.web.Servicer.Servicer_HomePage_Test"></class>-->
+
+<!--			<class name="com.Marvel.tests.web.Retailer.Reset_your_password_test"></class>-->
+
+
+			<class name="com.Marvel.tests.web.Retailer.Registration_test"></class>
+			<class name="com.Marvel.tests.web.Retailer.Customer_login_test"></class>
+			<class name="com.Marvel.tests.web.Retailer.Checkout_retailer_test"></class>
+			<class name="com.Marvel.tests.web.Retailer.Search_result_test"></class>
+			<class name="com.Marvel.tests.web.Retailer.Contact_us_retailer_test"></class>
+			<class name="com.Marvel.tests.web.Retailer.Product_registration_test"></class>
+			<class name="com.Marvel.tests.web.Retailer.PDP_Test"></class>
+			<class name="com.Marvel.tests.web.Retailer.PLP_test"></class>
+			<class name="com.Marvel.tests.web.Retailer.HomePage_Test"></class>
+
+			<class name="com.Marvel.tests.web.Retailer.Parts_and_accessories_test"></class>
+			<class name="com.Marvel.tests.web.Retailer.Shipping_retailer_test"></class>
+<!--				<methods>-->
+<!--					<include name="validate_b2b_login" />-->
+<!--					<exclude name="validate_dealer_login" />-->
+<!--				</methods>-->
+<!--			</class>-->
+		</classes>
+	</test>
+	
+<!--	<test name="LoginTestFirefox">-->
+<!--		<parameter name="browser" value="firefox" />-->
+<!--		<parameter name="nodeURL" value="" />-->
+<!--		<classes>-->
+<!--			<class name="com.Marvel.tests.web.LoginTest">-->
+<!--				<methods>-->
+<!--					<exclude name="validate_b2b_login" />-->
+<!--					<include name="validate_dealer_login" />-->
+<!--				</methods>-->
+<!--			</class>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	-->
+<!--	<test name="LoginTestResponsive">-->
+<!--		<parameter name="browser" value="chrome_emulator" />-->
+<!--		<parameter name="nodeURL" value="" />-->
+<!--		<classes>-->
+<!--			<class name="com.Marvel.tests.mobile.MLoginTest">-->
+<!--				<methods>-->
+<!--					<include name="validate_b2b_login" />-->
+<!--					<exclude name="validate_dealer_login" />-->
+<!--				</methods>-->
+<!--			</class>-->
+<!--		</classes>-->
+<!--	</test>-->
+</suite>
